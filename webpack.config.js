@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
     entry: "./src/index.ts",
     devtool: "inline-source-map",
-    mode: 'development',
+    mode: "development",
     module: {
         rules: [
             {
@@ -11,20 +11,21 @@ module.exports = {
                 use: "ts-loader",
                 exclude: /node_modules/,
             },
+            {
+                test: /\.css/i,
+                use: ["style-loader", "css-loader"],
+            },
         ],
     },
     resolve: {
         extensions: [".tsx", ".ts", ".js"],
     },
     output: {
-        filename: "main.js",
         path: path.resolve(__dirname, "dist"),
-    },
-    devServer: {
-        static: {
-            directory: path.join(__dirname, "dist"),
+        filename: "E.js",
+        library: {
+            name: "E",
+            type: "umd",
         },
-        compress: true,
-        port: 9000,
     },
 };

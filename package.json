@@ -2,10 +2,10 @@
   "name": "editor_engine",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/editor-engine.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "watch": "webpack --mode development --watch"
   },
   "repository": {
     "type": "git",
@@ -19,14 +19,17 @@
   },
   "homepage": "https://github.com/SoniSosony/editor_engine#readme",
   "devDependencies": {
+    "@types/drawflow": "^0.0.4",
     "@types/lodash": "^4.14.184",
+    "css-loader": "^6.7.1",
+    "expose-loader": "^4.0.0",
     "ts-loader": "^9.3.1",
-    "typescript": "^4.8.3",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.11.0"
+    "webpack-cli": "^4.10.0"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "drawflow": "^0.0.59",
+    "lodash": "^4.17.21",
+    "style-loader": "^3.3.1"
   }
 }

@@ -1,12 +1,12 @@
 {
     "compilerOptions": {
-        "outDir": "./dist/",
+        "module": "ESNext",
+        "target": "esnext",
         "sourceMap": true,
-        "noImplicitAny": true,
-        "module": "es6",
-        "target": "es5",
-        "jsx": "react",
-        "allowJs": true,
-        "moduleResolution": "node"
-    }
+        "declaration": true,
+        "outDir": "./dist/",
+    },
+    "include": [
+        "./src/**/*"
+    ]
 }
