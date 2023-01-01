@@ -1,6 +1,4 @@
-import { E } from "../../dist/editor-engine.js";
-
-export default class EDrawflowMap extends E {
+export default class EDrawflowMap extends E.EMap {
     constructor(containerId, { width, height } = { width: "100%", height: "100%" }) {
         super(containerId, { width, height });
     }
@@ -11,5 +9,3 @@ export default class EDrawflowMap extends E {
         this._source.start();
     }
 }
-
-console.log(E);
