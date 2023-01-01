@@ -1,4 +1,4 @@
-import EMap from "../components/EMap";
+import EMap from "../components/EMap/EMap";
 
 export default class Engine {
     private map: EMap;
