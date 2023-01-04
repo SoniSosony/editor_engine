@@ -1,4 +1,4 @@
-import EMap from "../EMap/EMap";
+import EMap from "../Canvas/Canvas";
 import Item from "../Item/Item";
 export default class Renderer {
     private _map;

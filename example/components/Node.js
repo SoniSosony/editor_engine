@@ -5,7 +5,7 @@ export default class Node extends E.Item {
         `;
         const data = { name: "" };
 
-        map.source.addNode("github", 0, 1, 150, 300, "github", data, html, false);
+        map.source.addNode("github", 0, 1, this._x, this._y, "github", data, html, false);
     }
 
     redraw(map) {

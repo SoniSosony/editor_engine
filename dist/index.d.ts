@@ -1,8 +1,12 @@
 import { default as engine } from "./engine/Engine";
-import { default as e_map } from "./components/EMap/EMap";
+import { default as canvas } from "./components/Canvas/Canvas";
 import { default as item } from "./components/Item/Item";
 import { default as renderer } from "./components/Renderer/Renderer";
+import { default as canvasEventBroker } from "./components/CanvasEventBroker/CanvasEventBroker";
 export declare const Engine: typeof engine;
-export declare const EMap: typeof e_map;
+export declare const Canvas: typeof canvas;
 export declare const Item: typeof item;
 export declare const Renderer: typeof renderer;
+export declare const CanvasEventBroker: typeof canvasEventBroker;
+export declare const EventData: (name: string, originalEvent: object, data: object) => import("./types/EventData").default;
+export declare const Point: (x: number, y: number) => import("./types/Point").default;
