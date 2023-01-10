@@ -10,3 +10,4 @@ export declare const Renderer: typeof renderer;
 export declare const CanvasEventBroker: typeof canvasEventBroker;
 export declare const EventData: (name: string, originalEvent: object, data: object) => import("./types/EventData").default;
 export declare const Point: (x: number, y: number) => import("./types/Point").default;
+export declare const EventsNamesConvertTable: (convertTable: object) => import("./types/EventsNamesConvertTable").default;
